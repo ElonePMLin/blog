@@ -1,0 +1,44 @@
+/* color palette from <https://github.com/vuejs/theme> */
+/* semantic color variables for this project */
+/* 主题、字体 */
+:root {
+  --text-color: rgb(32, 52, 70);
+  --text-color1: rgba(60, 60, 60, 0.702);
+  --text-color2: rgba(60, 60, 60, 0.369);
+  --bg-color: rgb(255, 255, 255);
+  /* --box-shadow-color: rgba(29, 28, 28, 0.83); */
+  --el-mask-color: rgb(255, 255, 255);  /* loading bg */
+  --sidebar-bg-color: rgb(255, 255, 255);
+  --capsule-color: rgba(0, 10, 32, 0.1);
+  --capsule-selected-color: rgba(0, 104, 217, 1);
+}
+
+html[data-theme="dark"] {
+  --text-color: rgba(255, 255, 255, 0.871);
+  --text-color1: rgba(235, 235, 235, 0.6);
+  --text-color2: rgba(60, 60, 60, 0.315);
+  --bg-color: rgb(26, 26, 36);
+  /* --box-shadow-color: rgba(26, 26, 36, 0.647); */
+  --el-mask-color: rgb(22, 22, 24);  /* loading bg */
+  --sidebar-bg-color: rgb(22, 22, 24);
+  --header-bg-color: rgb(27, 27, 31);
+  --capsule-color: rgba(22, 22, 24, 0.775);
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'text-font';
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'text-font';
+  src: url('/assets/font/textFont.woff2');
+}
